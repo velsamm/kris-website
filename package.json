@@ -1,0 +1,43 @@
+{
+  "name": "my-webpack-project",
+  "version": "1.0.0",
+  "description": "My webpack project",
+  "private": true,
+  "scripts": {
+    "dev:client-start": "NODE_ENV=development webpack serve --config webpack.config.js",
+    "dev:server-start": "webpack --config webpack.server.js --mode=development -w",
+    "prod:client-start": "NODE_ENV=production webpack --config webpack.config.js",
+    "prod:server-start": "webpack --config webpack.server.js --mode=production -w",
+    "start": "npm-run-all -p dev:server-start dev:client-start",
+    "prod:start": "npm-run-all -p prod:server-start prod:client-start"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "4.17.1",
+    "npm-run-all": "^4.1.5",
+    "prop-types": "^15.7.2",
+    "react": "17.0.1",
+    "react-dom": "17.0.1",
+    "webpack-node-externals": "2.5.2"
+  },
+  "devDependencies": {
+    "@babel/core": "7.12.17",
+    "@babel/preset-env": "7.12.17",
+    "@babel/preset-react": "7.12.13",
+    "@types/react": "17.0.2",
+    "@webpack-cli/init": "1.1.3",
+    "babel-loader": "8.2.2",
+    "babel-plugin-syntax-dynamic-import": "6.18.0",
+    "css-loader": "5.0.2",
+    "html-webpack-plugin": "5.2.0",
+    "mini-css-extract-plugin": "1.3.8",
+    "prettier": "2.2.1",
+    "style-loader": "2.0.0",
+    "webpack": "5.23.0",
+    "webpack-cli": "4.5.0",
+    "webpack-dev-server": "3.11.2",
+    "workbox-webpack-plugin": "6.1.0"
+  }
+}

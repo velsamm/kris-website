@@ -1,0 +1,171 @@
+html, body {
+    height:100%;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    letter-spacing: 2px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.custom-header {
+    background-color: #272727;
+}
+
+.custom-footer {
+    background-color: #272727;
+    font-size: 10px;
+}
+
+.custom-padding {
+    padding: 0 186px;
+}
+
+.custom-subheader {
+    color: #ffffff;
+
+    position: relative;
+    height: 85vh;
+
+    background: url("./assets/images/subheader.jpg") no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.custom-subheader-name {
+    font-size: 66px;
+}
+
+.custom-subheader-services {
+    font-size: 24px;
+}
+
+.custom-whoami-photo {
+
+}
+
+.custom-white-text {
+    color: #ffffff;
+}
+
+.btn-primary {
+    background-color: #b1976b;
+    border-color: #b1976b;
+    border-radius: 0;
+    text-transform: uppercase;
+    padding: 18px 65px;
+
+}
+
+.btn-primary:hover {
+    background-color: #c5a265;
+    border-color: #c5a265;
+    border-radius: 0;
+}
+
+.btn-primary:focus {
+    background-color: #c5a265;
+    border-color: #c5a265;
+}
+
+.btn-outline-primary {
+    background-color: transparent;
+    color: #b1976b;
+    border-radius: 0;
+    border-color: transparent;
+}
+
+.btn-outline-primary:hover {
+    background-color: transparent;
+    color: #c5a265;
+    border-color: #c5a265;
+}
+
+.btn-outline-primary:focus {
+    background-color: transparent;
+    color: #c5a265;
+    border-color: #c5a265;
+    box-shadow: 0 0 0 0.2rem #c5a265;
+}
+
+.btn-outline-primary:not(:disabled):not(.disabled):active {
+    background-color: transparent;
+    color: #c5a265;
+    border-color: #c5a265;
+}
+
+.btn-outline-primary:not(:disabled):not(.disabled):active:focus {
+    box-shadow: 0 0 0 0.2rem #c5a265;
+}
+
+label {
+    margin: 0;
+}
+
+.nav-link {
+    color: #ffffff;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.nav-link:hover {
+    color: #bcbbbb;
+}
+
+.form-control {
+    border-radius: 0;
+}
+
+.custom-nav-link {
+    min-width: 125px;
+}
+
+.custom-disclaimer {
+    background-color: #b1976b;
+}
+
+.custom-table-td-75 {
+    width: 75%;
+}
+
+.custom-table-td-25 {
+    width: 25%;
+}
+
+.custom-service-header-label {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.custom-services-header-label {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.custom-contact-me {
+    background: linear-gradient(#565656, #565656), url("./assets/images/contactme.jpg") no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-blend-mode: darken;
+    min-height: 550px;
+    /*height: 50vh;*/
+}
+
+
+
+.custom-contact-me-label {
+    color: #b1976b;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.custom-contacts {
+    background-color: #b1976b;
+    color: #ffffff;
+}
