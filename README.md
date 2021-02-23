@@ -1,15 +1,23 @@
-# 🚀 Welcome to your new awesome project!
-
-This project has been created using **webpack scaffold**, you can now run
-
 ```
-npm run build
+npm start
 ```
 
-or
+run dev mode
 
 ```
-yarn build
+npm run prod:start
 ```
 
-to bundle your application
+run prod mode
+
+```
+docker build -t kris-website .
+```
+
+docker build
+
+```
+docker run -dp 3000:3000 kris-website
+```
+
+docker run image
