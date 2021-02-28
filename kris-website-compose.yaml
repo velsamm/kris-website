@@ -1,0 +1,7 @@
+version: '3.3'
+services: 
+  my-webpack-project:
+    restart: always
+    build: 
+      dockerfile: Dockerfile
+      context: .
