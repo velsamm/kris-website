@@ -50,7 +50,7 @@ module.exports = {
                 ],
             },
             {
-                test: /.(jpg|svg)$/,
+                test: /.(jpg|svg|png)$/,
                 type: 'asset/resource',
             },
         ],
@@ -60,7 +60,7 @@ module.exports = {
         contentBase: path.join(__dirname, 'build'),
         compress: true,
         port: 3000,
-        host: '0.0.0.0'
+        host: '0.0.0.0',
         // writeToDisk: true,
     },
 }

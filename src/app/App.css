@@ -7,6 +7,7 @@ body {
     margin: 0;
     letter-spacing: 2px;
     font-family: 'Montserrat', sans-serif;
+    color: #595d64
 }
 
 .custom-header {
@@ -41,10 +42,6 @@ body {
 
 .custom-subheader-services {
     font-size: 24px;
-}
-
-.custom-whoami-photo {
-
 }
 
 .custom-white-text {
@@ -142,8 +139,8 @@ label {
 
 .custom-services-header-label {
     text-transform: uppercase;
-    font-weight: bold;
-    font-size: 18px;
+    /*font-weight: bold;*/
+    /*font-size: 18px;*/
 }
 
 .custom-contact-me {
@@ -154,9 +151,7 @@ label {
     background-size: cover;
     background-blend-mode: darken;
     min-height: 550px;
-    /*height: 50vh;*/
 }
-
 
 
 .custom-contact-me-label {
@@ -168,4 +163,9 @@ label {
 .custom-contacts {
     background-color: #b1976b;
     color: #ffffff;
+}
+
+.custom-whoami-text-p {
+    font-size: 18px;
+    line-height: 1.4rem;
 }

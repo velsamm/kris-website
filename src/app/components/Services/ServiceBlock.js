@@ -7,17 +7,17 @@ const ServiceBlock = (props) => {
     return (
         <div className="container p-5">
             <div className="row">
-                <div className="col d-flex justify-content-center align-items-center">
-                    <img src={imgSrc} alt="Picture" />
+                <div className="col text-center">
+                    <img src={imgSrc} alt="Picture" width="100%" />
                 </div>
             </div>
             <div className="row py-3">
-                <div className="col d-flex justify-content-center align-items-center">
-                    <label className="text-center">{textContent}</label>
-                </div>
+                <label className="col text-center font-weight-bold">
+                    {textContent}
+                </label>
             </div>
             <div className="row">
-                <div className="col d-flex justify-content-center align-items-center">
+                <div className="col text-center">
                     <button className="btn btn-outline-primary">
                         Подробнее
                     </button>
