@@ -4,7 +4,7 @@ import sign from '../../assets/images/sign.svg'
 import kristina from '../../assets/images/kristina.jpg'
 
 const WhoAmIDescription = () => (
-    <div className="m-auto">
+    <div className="m-auto py-sm-5 px-sm-2">
         <div>
             <label className="h4">
                 Приветствую Вас на моем сайте,
@@ -48,10 +48,10 @@ const WhoAmI = () => (
     <div className="container-fluid bg-light custom-padding" id="whoami-nav">
         <div></div>
         <div className="row py-5">
-            <div className="col bg-white d-flex">
+            <div className="col-sm-12 col-lg-6 bg-white d-flex">
                 <WhoAmIDescription />
             </div>
-            <div className="col bg-white">
+            <div className="col-sm-12 col-lg-6 bg-white">
                 <img src={kristina} alt="kristina photo" width="100%" />
             </div>
         </div>

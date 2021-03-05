@@ -5,7 +5,7 @@ const ServiceBlock = (props) => {
     const { imgSrc, textContent } = props
 
     return (
-        <div className="container p-5">
+        <div className="container p-2">
             <div className="row">
                 <div className="col text-center">
                     <img src={imgSrc} alt="Picture" width="100%" />

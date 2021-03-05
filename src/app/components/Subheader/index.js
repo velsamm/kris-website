@@ -11,6 +11,7 @@ const Subheader = () => (
             <div className="col mt-5">
                 <nav className="navbar navbar-expand-lg ">
                     <button
+                        id="toggler-button"
                         className="navbar-toggler"
                         type="button"
                         data-toggle="collapse"
@@ -61,23 +62,25 @@ const Subheader = () => (
             </div>
         </div>
 
-        <div className="row justify-content-center">
-            <div className="col-sm-auto">
-                <div className="row">
-                    <label className="custom-subheader-name">
-                        KRISTINA NOVIKOVA
-                    </label>
-                </div>
-                <div className="row justify-content-center">
-                    <label className="text-center custom-subheader-services">
-                        профессиональные
-                        <br />
-                        юридические консультации
-                    </label>
-                </div>
-                <div className="row mt-5 justify-content-center">
-                    <button className="btn btn-primary">Контакты</button>
-                </div>
+        <div className="row">
+            <div className="col text-center">
+                <label className="custom-subheader-name">
+                    KRISTINA NOVIKOVA
+                </label>
+            </div>
+        </div>
+        <div className="row">
+            <div className="col text-center">
+                <label className=" custom-subheader-services">
+                    профессиональные
+                    <br />
+                    юридические консультации
+                </label>
+            </div>
+        </div>
+        <div className="row">
+            <div className="col mt-5 text-center">
+                <button className="btn btn-primary">Контакты</button>
             </div>
         </div>
     </div>
