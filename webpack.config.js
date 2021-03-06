@@ -2,27 +2,21 @@ const path = require('path')
 const webpack = require('webpack')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
-const WorkboxWebpackPlugin = require('workbox-webpack-plugin')
 
 module.exports = {
     mode: process.env.NODE_ENV === 'development' ? 'development' : 'production',
     entry: './src/app/index.js',
-
+    devtool: 'source-map',
     output: {
-        path: path.resolve(__dirname, 'build'),
+        path: path.resolve(__dirname, 'build/client'),
         publicPath: '',
     },
 
     plugins: [
         new webpack.ProgressPlugin(),
-        new MiniCssExtractPlugin({ filename: 'index.[contenthash].css' }),
+        new MiniCssExtractPlugin({ filename: 'index.css' }),
         new HtmlWebpackPlugin({
             template: 'public/index.html',
-        }),
-        new WorkboxWebpackPlugin.GenerateSW({
-            swDest: 'sw.js',
-            clientsClaim: true,
-            skipWaiting: true,
         }),
     ],
 
@@ -52,12 +46,15 @@ module.exports = {
             {
                 test: /.(jpg|svg|png)$/,
                 type: 'asset/resource',
+                generator: {
+                    filename: 'static/[hash][ext][query]',
+                },
             },
         ],
     },
 
     devServer: {
-        contentBase: path.join(__dirname, 'build'),
+        contentBase: path.join(__dirname, 'build/client'),
         compress: true,
         port: 3000,
         host: '0.0.0.0',

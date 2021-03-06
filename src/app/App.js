@@ -9,13 +9,13 @@ import ContactMe from './components/ContactMe'
 import Contacts from './components/Contacts'
 import Footer from './components/Footer'
 
-const App = () => (
+const App = ({ sendNotification }) => (
     <div>
         <Header />
         <Subheader />
         <WhoAmI />
         <Services />
-        <ContactMe />
+        <ContactMe sendNotification={sendNotification} />
         <Contacts />
         <Footer />
     </div>

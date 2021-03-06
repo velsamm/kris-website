@@ -1,23 +1,20 @@
+## DEVELOPMENT
+
 ```
 npm start
 ```
 
-run dev mode
+## PRODUCTION
 
 ```
-npm run prod:start
+npm run prod:build prod:start
 ```
 
-run prod mode
+## DOCKER
+
+# Build
 
 ```
 docker build -t kris-website .
+docker-compose -f kris-website-compose.yaml up -d --force-recreate
 ```
-
-docker build
-
-```
-docker run -dp 3000:3000 kris-website
-```
-
-docker run image
