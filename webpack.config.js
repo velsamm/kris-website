@@ -2,6 +2,7 @@ const path = require('path')
 const webpack = require('webpack')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
+const CopyPlugin = require('copy-webpack-plugin')
 
 module.exports = {
     mode: process.env.NODE_ENV === 'development' ? 'development' : 'production',
@@ -17,6 +18,14 @@ module.exports = {
         new MiniCssExtractPlugin({ filename: 'index.css' }),
         new HtmlWebpackPlugin({
             template: 'public/index.html',
+        }),
+        new CopyPlugin({
+            patterns: [
+                {
+                    from: 'public/robots.txt',
+                    to: 'robots.txt',
+                },
+            ],
         }),
     ],
 
@@ -49,6 +58,10 @@ module.exports = {
                 generator: {
                     filename: 'static/[hash][ext][query]',
                 },
+            },
+            {
+                test: /.(txt)$/,
+                type: 'asset/resource',
             },
         ],
     },
