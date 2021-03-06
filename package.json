@@ -11,12 +11,13 @@
     "prod:server-build": "webpack --config webpack.server.js --mode=production",
     "clean": "rm -rf build  server-build",
     "build": "npm run clean && npm run prod:client-build && npm run prod:server-build",
-    "prod:start": "DEBUG=telegraf:*,express:application NODE_ENV=production node build/ssr/index.js"
+    "prod:start": "DEBUG=telegraf:*,app.* NODE_ENV=production node build/ssr/index.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "dotenv": "^8.2.0",
     "express": "4.17.1",
     "npm-run-all": "^4.1.5",
     "prop-types": "^15.7.2",

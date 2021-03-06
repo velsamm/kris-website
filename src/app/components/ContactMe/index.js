@@ -4,8 +4,25 @@ const ContactMe = () => {
     const [message, setMessage] = useState({})
 
     const handleSubmit = () => {
-        console.log('send msg')
-        // sendNotification(618392081, message)
+        const xmlHttpBuilder = new XMLHttpRequest()
+        xmlHttpBuilder.open('post', '/send')
+        xmlHttpBuilder.setRequestHeader('Content-Type', 'application/json')
+        const payload = JSON.stringify(message)
+        xmlHttpBuilder.send(payload)
+        xmlHttpBuilder.onload = function () {
+            if (xmlHttpBuilder.status !== 200) {
+                // анализируем HTTP-статус ответа, если статус не 200, то произошла ошибка
+                // alert(
+                //     `Ошибка ${xmlHttpBuilder.status}: ${xmlHttpBuilder.statusText}`
+                // )
+                // Например, 404: Not Found
+                alert('Ошибка при отправке заявки')
+            } else {
+                // если всё прошло гладко, выводим результат
+                // alert(`Готово, получили ${xmlHttpBuilder.response.length} байт`); // response -- это ответ сервера
+                alert('Заявка принята успешно')
+            }
+        }
     }
 
     return (
@@ -25,9 +42,7 @@ const ContactMe = () => {
                 <div className="col-sm-11 col-md-6 col-lg-4">
                     <form
                         onSubmit={(e) => {
-                            console.log(e)
                             e.preventDefault()
-                            e.stopPropagation()
                             handleSubmit()
                         }}
                     >
@@ -38,7 +53,10 @@ const ContactMe = () => {
                                 name="formValueName"
                                 placeholder="Ваше имя"
                                 onChange={(event) => {
-                                    setMessage({ name: event.target.value })
+                                    setMessage({
+                                        ...message,
+                                        name: event.target.value,
+                                    })
                                 }}
                             />
                         </div>
@@ -49,7 +67,10 @@ const ContactMe = () => {
                                 name="formValuePhone"
                                 placeholder="Ваш телефон"
                                 onChange={(event) => {
-                                    setMessage({ phone: event.target.value })
+                                    setMessage({
+                                        ...message,
+                                        phone: event.target.value,
+                                    })
                                 }}
                             />
                         </div>
@@ -60,7 +81,10 @@ const ContactMe = () => {
                                 name="formValueEmail"
                                 placeholder="Ваш email"
                                 onChange={(event) => {
-                                    setMessage({ email: event.target.value })
+                                    setMessage({
+                                        ...message,
+                                        email: event.target.value,
+                                    })
                                 }}
                             />
                         </div>
@@ -71,7 +95,10 @@ const ContactMe = () => {
                                 placeholder="Ваше сообщение"
                                 rows="3"
                                 onChange={(event) => {
-                                    setMessage({ issue: event.target.value })
+                                    setMessage({
+                                        ...message,
+                                        issue: event.target.value,
+                                    })
                                 }}
                             />
                         </div>

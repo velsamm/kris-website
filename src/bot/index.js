@@ -1,4 +1,3 @@
-// bot token 1637480905:AAHmp-ABhsQ2c5NOz5TX9y5XfsZBFg6jF_g
 const { Telegraf } = require('telegraf')
 
 class Bot {
@@ -12,9 +11,7 @@ class Bot {
     }
 
     build() {
-        this.bot = new Telegraf(
-            '1637480905:AAHmp-ABhsQ2c5NOz5TX9y5XfsZBFg6jF_g'
-        )
+        this.bot = new Telegraf(process.env.BOT_TOKEN)
     }
 
     launch() {
@@ -34,8 +31,11 @@ class Bot {
         })
     }
 
-    sendNotification(telegramId, message) {
-        return this.bot.telegram.sendMessage(telegramId, message)
+    async sendNotification(telegramId, message) {
+        return await Promise.all([
+            this.bot.telegram.sendMessage(telegramId[0], message),
+            this.bot.telegram.sendMessage(telegramId[1], message),
+        ])
     }
 }
 
