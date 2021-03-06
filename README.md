@@ -7,7 +7,7 @@ npm start
 ## PRODUCTION
 
 ```
-npm run prod:build prod:start
+npm run build &&  npm run prod:start
 ```
 
 ## DOCKER
@@ -16,5 +16,5 @@ npm run prod:build prod:start
 
 ```
 docker build -t kris-website .
-docker-compose -f kris-website-compose.yaml up -d --force-recreate
+docker-compose -f kris-website-compose.yaml up -d --build --force-recreate
 ```

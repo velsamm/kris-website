@@ -1,11 +1,7 @@
-import React from 'react'
-import App from '../app/App'
-
 const express = require('express')
 const app = express()
 const fs = require('fs')
 const path = require('path')
-const ReactDOMServer = require('react-dom/server')
 const debug = require('debug')('app:debug')
 
 const bot = require('../bot/index')
@@ -29,17 +25,9 @@ process.once('SIGTERM', () => {
 })
 
 app.get('/', (req, res) => {
-    const app = ReactDOMServer.renderToStaticMarkup(
-        <App sendNotification={bot.sendNotification} />
-    )
-    const htmlTemplate = fs
+    const html = fs
         .readFileSync(path.resolve('build/client/index.html'))
         .toString('utf8')
-
-    const html = htmlTemplate.replace(
-        '<div id="root"></div>',
-        `<div id="root">${app}</div>`
-    )
 
     return res.send(html)
 })

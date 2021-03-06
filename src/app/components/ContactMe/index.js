@@ -1,11 +1,11 @@
 import React, { useState } from 'react'
 
-const ContactMe = ({ sendNotification }) => {
+const ContactMe = () => {
     const [message, setMessage] = useState({})
 
     const handleSubmit = () => {
         console.log('send msg')
-        sendNotification(618392081, message)
+        // sendNotification(618392081, message)
     }
 
     return (
