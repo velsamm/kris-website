@@ -3,16 +3,16 @@ import React from 'react'
 import Logo from '../../icons/Logo'
 
 const Subheader = () => (
-    <div className="container-fluid custom-subheader">
+    <div className="container-fluid custom-subheader ">
         <div className="row">
             <div className="col">
-                <Logo width={400} height={200} />
+                <Logo width={200} height={100} />
             </div>
-            <div className="col mt-5">
-                <nav className="navbar navbar-expand-lg ">
+            <div className="col d-flex justify-content-end">
+                <nav className="navbar navbar-expand-lg navbar-dark">
                     <button
                         id="toggler-button"
-                        className="navbar-toggler"
+                        className="navbar-toggler ml-auto"
                         type="button"
                         data-toggle="collapse"
                         data-target="#navbarSupportedContent"
@@ -28,31 +28,43 @@ const Subheader = () => (
                         id="navbarSupportedContent"
                     >
                         <ul className="navbar-nav mr-auto">
-                            <li className="nav-item mx-4">
+                            <li className="nav-item">
                                 <a
-                                    className="nav-link custom-nav-link"
+                                    className="nav-link custom-nav-link text-right text-lg-center"
                                     href="#whoami-nav"
                                 >
                                     Обо мне
                                 </a>
                             </li>
-                            <li className="nav-item mx-5">
-                                <a className="nav-link" href="#services-nav">
+                            <li className="nav-item ml-lg-3">
+                                <a
+                                    className="nav-link text-right text-lg-center"
+                                    href="#services-nav"
+                                >
                                     Услуги
                                 </a>
                             </li>
-                            <li className="nav-item mx-5">
-                                <a className="nav-link" href="#">
+                            <li className="nav-item ml-lg-3">
+                                <a
+                                    className="nav-link text-right text-lg-center"
+                                    href="#"
+                                >
                                     Отзывы
                                 </a>
                             </li>
-                            <li className="nav-item mx-5">
-                                <a className="nav-link" href="#">
+                            <li className="nav-item ml-lg-3">
+                                <a
+                                    className="nav-link text-right text-lg-center"
+                                    href="#"
+                                >
                                     Клиенты
                                 </a>
                             </li>
-                            <li className="nav-item mx-5">
-                                <a className="nav-link" href="#contacts-nav">
+                            <li className="nav-item ml-lg-3">
+                                <a
+                                    className="nav-link text-right text-lg-center"
+                                    href="#contacts-nav"
+                                >
                                     Контакты
                                 </a>
                             </li>
@@ -62,7 +74,7 @@ const Subheader = () => (
             </div>
         </div>
 
-        <div className="row">
+        <div className="row mt-5">
             <div className="col text-center">
                 <label className="custom-subheader-name">
                     KRISTINA NOVIKOVA

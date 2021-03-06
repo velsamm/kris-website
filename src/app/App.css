@@ -28,13 +28,15 @@ body {
     color: #ffffff;
 
     position: relative;
-    height: 85vh;
+    /*height: 85vh;*/
 
     background: url("./assets/images/subheader.jpg") no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    padding-top: 0;
+    padding-bottom: 150px;
 }
 
 .custom-subheader-name {
@@ -166,6 +168,10 @@ label {
     color: #ffffff;
 }
 
+.custom-contacts-details {
+    font-size: 12px;
+}
+
 .custom-whoami-text-p {
     font-size: 18px;
     line-height: 1.4rem;
@@ -180,7 +186,10 @@ label {
         padding: 0 10px;
     }
 
-
+    .custom-header {
+        padding-bottom: 50px;
+        padding-top: 62px;
+    }
 }
 
 @media(max-width: 768px) {
@@ -193,9 +202,14 @@ label {
         position: fixed;
         position: -ms-device-fixed;
         top: 0;
+        padding-bottom: 100px;
 
         /*padding: 84px 0 0 0;*/
         z-index: 100;
+    }
+
+    .custom-subheader {
+        padding-top: 62px;
     }
 
     .custom-header-cons-button {

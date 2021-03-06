@@ -7,7 +7,7 @@ import Instagram from '../../icons/Instagram'
 const Header = () => (
     <div className="container-fluid custom-padding custom-header d-flex">
         <div className="row w-100">
-            <div className="col-md-12 col-lg-6 my-auto text-lg-left text-sm-center">
+            <div className="col-md-12 col-lg-6 my-auto text-center text-lg-left ">
                 <label>
                     <PhoneIcon />
                     <span className="custom-white-text">+7 909 123 45 67</span>
@@ -29,9 +29,6 @@ const Header = () => (
                         <Instagram /> novikova_law
                     </a>
                 </div>
-                {/*<div className="custom-header-cons-button">*/}
-                {/*    <button className="btn btn-primary">Консультация</button>*/}
-                {/*</div>*/}
             </div>
         </div>
     </div>

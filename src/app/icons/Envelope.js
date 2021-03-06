@@ -1,11 +1,11 @@
 import React from 'react'
 
-const EnvelopIcon = () => (
+const EnvelopIcon = ({ color = '#b1976b' }) => (
     <svg
         xmlns="http://www.w3.org/2000/svg"
         width="16"
         height="16"
-        fill="#b1976b"
+        fill={color}
         className="bi bi-envelope"
         viewBox="0 0 16 16"
     >

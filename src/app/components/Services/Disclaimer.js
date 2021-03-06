@@ -1,7 +1,7 @@
 import React from 'react'
 
 const ServicesDisclaimer = () => (
-    <div className="container-fluid d-flex justify-content-center custom-disclaimer py-5">
+    <div className="container-fluid d-flex justify-content-center custom-disclaimer custom-padding py-5">
         <label className="text-center">
             В предложенной ниже таблице приведены примерные цены и стоимость на
             оказываемые мной юридические услуги и работы.
