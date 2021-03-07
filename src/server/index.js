@@ -37,18 +37,18 @@ app.post('/send', (req, res) => {
     debug(req.body)
 
     const payload = req.body
-    const name = `Имя: ${payload.name}`
-    const phone = `Телефон: ${payload.phone}`
-    const email = `Email: ${payload.email}`
-    const issue = `Сообщение: ${payload.issue}`
+    const name = `Имя: ${payload.name || ''}`
+    const phone = `Телефон: ${payload.phone || ''}`
+    const email = `Email: ${payload.email || ''}`
+    const issue = `Сообщение: ${payload.issue || ''}`
 
     const tgMessage = `
 Новая заявка!
     
-${name || ''}
-${phone || ''}
-${email || ''}
-${issue || ''}`
+${name}
+${phone}
+${email}
+${issue}`
 
     const receivers = process.env.RECEIVERS
     bot.sendNotification(receivers.split(','), tgMessage)
