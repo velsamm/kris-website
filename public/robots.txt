@@ -1,2 +1,3 @@
 User-agent: *
 Disallow: /send
+Sitemap: https://novikovakristina.ru/sitemap.xml

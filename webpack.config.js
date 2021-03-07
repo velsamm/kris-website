@@ -25,6 +25,10 @@ module.exports = {
                     from: 'public/robots.txt',
                     to: 'robots.txt',
                 },
+                {
+                    from: 'public/sitemap.txt',
+                    to: 'sitemap.txt',
+                },
             ],
         }),
     ],
