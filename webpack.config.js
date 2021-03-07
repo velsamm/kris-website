@@ -26,8 +26,8 @@ module.exports = {
                     to: 'robots.txt',
                 },
                 {
-                    from: 'public/sitemap.txt',
-                    to: 'sitemap.txt',
+                    from: 'public/sitemap.xml',
+                    to: 'sitemap.xml',
                 },
             ],
         }),
