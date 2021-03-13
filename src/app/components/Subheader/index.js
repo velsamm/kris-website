@@ -3,7 +3,7 @@ import React from 'react'
 import Logo from '../../icons/Logo'
 
 const Subheader = () => (
-    <div className="container-fluid custom-subheader ">
+    <div className="container-fluid custom-padding custom-subheader">
         <div className="row">
             <div className="col">
                 <Logo width={200} height={100} />

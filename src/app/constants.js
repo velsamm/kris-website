@@ -1,0 +1,5 @@
+export const PHONE = '+7 (988) 891 76 29'
+export const PHONE_LINK = 'tel:+79888917629'
+export const MAIL = 'conscons@gmail.com'
+export const INSTAGRAM = 'novikova_law'
+export const ADDRESS = 'г.Краснодар, ул.Садовая 159'

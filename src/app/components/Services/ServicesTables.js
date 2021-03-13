@@ -154,7 +154,7 @@ const ServiceTable = (props) => {
         <table className="table table-bordered">
             <tbody>
                 {services.map((s) => (
-                    <tr id={s.service}>
+                    <tr id={s.service} className="custom-table-tr">
                         <td className="custom-table-td-75">{s.service}</td>
                         <td className="custom-table-td-25">{s.value}</td>
                     </tr>

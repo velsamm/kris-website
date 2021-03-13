@@ -5,6 +5,7 @@ import EnvelopIcon from '../../icons/Envelope'
 import Instagram from '../../icons/Instagram'
 import YaMap from './YaMap'
 import LocationIcon from '../../icons/Location'
+import { PHONE, MAIL, INSTAGRAM, ADDRESS, PHONE_LINK } from '../../constants'
 
 const Contacts = () => (
     <div
@@ -21,18 +22,18 @@ const Contacts = () => (
                     </div>
                     <div className="row m-2">
                         <div className="col custom-contacts-details font-weight-bold ">
-                            <PhoneIcon color="#ffffff" /> +7 909 123 45 67
+                            <PhoneIcon color="#ffffff" />{' '}
+                            <a href={PHONE_LINK}>{PHONE}</a>
                         </div>
                     </div>
                     <div className="row m-2">
                         <div className="col custom-contacts-details font-weight-bold ">
-                            <EnvelopIcon color="#ffffff" /> mail@mail.com
+                            <EnvelopIcon color="#ffffff" /> {MAIL}
                         </div>
                     </div>
                     <div className="row m-2">
                         <div className="col custom-contacts-details font-weight-bold ">
-                            <LocationIcon />{' '}
-                            <label>г.Краснодар, ул.Садовая 159</label>
+                            <LocationIcon /> <label>{ADDRESS}</label>
                         </div>
                     </div>
                     <div className="row m-2">
@@ -40,9 +41,9 @@ const Contacts = () => (
                             <a
                                 className="custom-white-text"
                                 type="button"
-                                href="https://www.instagram.com/novikova_law"
+                                href={`https://www.instagram.com/${INSTAGRAM}`}
                             >
-                                <Instagram color="#ffffff" /> novikova_law
+                                <Instagram color="#ffffff" /> {INSTAGRAM}
                             </a>
                         </div>
                     </div>
