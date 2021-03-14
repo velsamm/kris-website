@@ -1,11 +1,13 @@
-import React from 'react'
+import React, { lazy } from 'react'
 
 import PhoneIcon from '../../icons/PhoneIcon'
 import EnvelopIcon from '../../icons/Envelope'
 import Instagram from '../../icons/Instagram'
-import YaMap from './YaMap'
 import LocationIcon from '../../icons/Location'
+
 import { PHONE, MAIL, INSTAGRAM, ADDRESS, PHONE_LINK } from '../../constants'
+
+const YaMap = lazy(() => import('./YaMap'))
 
 const Contacts = () => (
     <div

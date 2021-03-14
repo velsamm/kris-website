@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Suspense } from 'react'
 import './App.css'
 
 import Header from './components/Header'
@@ -8,17 +8,20 @@ import Services from './components/Services'
 import ContactMe from './components/ContactMe'
 import Contacts from './components/Contacts'
 import Footer from './components/Footer'
+import Loader from './components/Loader'
 
 const App = () => (
-    <div>
-        <Header />
-        <Subheader />
-        <WhoAmI />
-        <Services />
-        <ContactMe />
-        <Contacts />
-        <Footer />
-    </div>
+    <Suspense fallback={Loader}>
+        <div>
+            <Header />
+            <Subheader />
+            <WhoAmI />
+            <Services />
+            <ContactMe />
+            <Contacts />
+            <Footer />
+        </div>
+    </Suspense>
 )
 
 export default App

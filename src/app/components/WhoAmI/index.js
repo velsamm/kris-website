@@ -1,7 +1,7 @@
 import React from 'react'
 
 import sign from '../../assets/images/sign.svg'
-import kristina from '../../assets/images/kristina.jpg'
+import kristina from '../../assets/images/kristina.webp'
 
 const WhoAmIDescription = () => (
     <div className="m-auto py-sm-5 px-sm-2">

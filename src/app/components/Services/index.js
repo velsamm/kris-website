@@ -6,12 +6,12 @@ import ServicesTables from './ServicesTables'
 
 import blockchainImg from '../../assets/images/blockchain-img.png'
 import webImg from '../../assets/images/web-img.png'
-import jurItImg from '../../assets/images/jur-it-img.png'
-import potrebImg from '../../assets/images/potrebImg.png'
-import columnsImg from '../../assets/images/columnsImg.png'
-import corpImg from '../../assets/images/corpImg.png'
-import regTermIPImg from '../../assets/images/reg-term-ip-img.png'
-import buySellImg from '../../assets/images/buy-sell-img.png'
+import jurItImg from '../../assets/images/jur-it-img.webp'
+import potrebImg from '../../assets/images/potrebImg.webp'
+import columnsImg from '../../assets/images/columnsImg.webp'
+import corpImg from '../../assets/images/corpImg.webp'
+import regTermIPImg from '../../assets/images/reg-term-ip-img.webp'
+import buySellImg from '../../assets/images/buy-sell-img.webp'
 
 const servicesList = [
     {
