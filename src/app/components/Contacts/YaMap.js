@@ -1,5 +1,9 @@
 import React from 'react'
-import { Map, Placemark, YMaps } from 'react-yandex-maps'
+import {
+    Map,
+    Placemark,
+    YMaps,
+} from 'react-yandex-maps/dist/production/react-yandex-maps.esm'
 
 const YaMap = () => {
     return (
