@@ -17,36 +17,44 @@ const servicesList = [
     {
         imgSrc: blockchainImg,
         textContent: 'Блокчейн и цифровые финансовые активы',
+        link: 'blockChain',
     },
     {
         imgSrc: webImg,
         textContent: 'Ограничение доступа к веб-сайтам',
+        link: 'websites',
     },
     {
         imgSrc: jurItImg,
         textContent: 'Комплексное сопровождение IT-проектов',
+        link: 'it',
     },
     {
         imgSrc: potrebImg,
         textContent: 'Услуги по делам о защите прав потребителей',
+        link: 'potreb',
     },
     {
         imgSrc: columnsImg,
         textContent: 'Судебные споры',
+        link: 'argues',
     },
     {
         imgSrc: corpImg,
         textContent: 'Корпоративное сопровождение',
+        link: 'corp',
     },
     {
         imgSrc: regTermIPImg,
         textContent:
             'Регистрация \\ ликвидация юридических лиц и индивидуальных предпринимателей',
+        link: 'reg',
     },
     {
         imgSrc: buySellImg,
         textContent:
             'Юридическое сопровождение сделок купли-продажи объектов недвижимости',
+        link: 'buy-sell',
     },
 ]
 

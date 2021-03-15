@@ -167,7 +167,11 @@ const ServiceTable = (props) => {
 const ServicesTables = () => (
     <div className="container-fluid custom-padding">
         {servicesNames.map((sn) => (
-            <div key={sn.key} className="row justify-content-center my-5">
+            <div
+                key={sn.key}
+                id={sn.key}
+                className="row justify-content-center my-5"
+            >
                 <div className="col text-center mb-3">
                     <label className="custom-service-header-label">
                         {sn.value}

@@ -4,7 +4,7 @@ import PhoneIcon from '../../icons/PhoneIcon'
 import EnvelopIcon from '../../icons/Envelope'
 import Instagram from '../../icons/Instagram'
 
-import { PHONE, MAIL, INSTAGRAM } from '../../constants'
+import { PHONE, MAIL, INSTAGRAM, PHONE_LINK } from '../../constants'
 
 const Header = () => (
     <div className="container-fluid custom-padding custom-header d-flex">
@@ -12,7 +12,9 @@ const Header = () => (
             <div className="col col-md-12 col-lg-6 my-auto text-center text-lg-left ">
                 <label>
                     <PhoneIcon />
-                    <span className="custom-white-text">{PHONE}</span>
+                    <a className="custom-white-text" href={PHONE_LINK}>
+                        {PHONE}
+                    </a>
                 </label>
                 <label className="d-none d-md-inline">
                     {/*<label className="ml-1 ml-sm-2 ml-lg-0 ml-xl-2  d-none d-md-inline">*/}
