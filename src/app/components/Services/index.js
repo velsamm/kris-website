@@ -59,7 +59,7 @@ const servicesList = [
 ]
 
 const ServicesBlocksComponent = () => (
-    <div className="container-fluid custom-padding" id="services-nav">
+    <div className="container-fluid bg-light custom-padding" id="services-nav">
         <div className="row pt-5">
             <div className="col d-flex justify-content-center align-items-center">
                 <label className="text-center font-weight-bold h3">

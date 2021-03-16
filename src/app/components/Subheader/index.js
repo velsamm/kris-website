@@ -76,18 +76,16 @@ const Subheader = () => (
 
         <div className="row mt-5">
             <div className="col text-center">
-                <label className="custom-subheader-name">
-                    KRISTINA NOVIKOVA
-                </label>
+                <h1 className="custom-subheader-name">KRISTINA NOVIKOVA</h1>
             </div>
         </div>
         <div className="row">
             <div className="col text-center">
-                <label className=" custom-subheader-services">
+                <h2 className=" custom-subheader-services">
                     профессиональные
                     <br />
                     юридические консультации
-                </label>
+                </h2>
             </div>
         </div>
         <div className="row">

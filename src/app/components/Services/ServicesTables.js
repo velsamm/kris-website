@@ -165,7 +165,7 @@ const ServiceTable = (props) => {
 }
 
 const ServicesTables = () => (
-    <div className="container-fluid custom-padding">
+    <div className="container-fluid bg-light custom-padding">
         {servicesNames.map((sn) => (
             <div
                 key={sn.key}

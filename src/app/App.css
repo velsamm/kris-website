@@ -18,7 +18,6 @@ body {
 .custom-footer {
     background-color: #272727;
     font-size: 0.65rem;
-    /*font-size: 10px;*/
 }
 
 .custom-padding {
@@ -41,12 +40,10 @@ body {
 
 .custom-subheader-name {
     font-size: 4rem;
-    /*font-size: 66px;*/
 }
 
 .custom-subheader-services {
     font-size: 2rem;
-    /*font-size: 24px;*/
 }
 
 .custom-white-text {
@@ -127,7 +124,8 @@ label {
 }
 
 .custom-disclaimer {
-    background-color: #b1976b;
+    background-color: #272727;
+    color: #ffffff;
     font-size: 0.85rem;
 }
 
@@ -170,18 +168,16 @@ label {
 }
 
 .custom-contacts {
-    background-color: #b1976b;
+    background-color: #272727;
     color: #ffffff;
 }
 
 .custom-contacts-details {
     font-size: 0.85rem;
-    /*font-size: 12px;*/
 }
 
 .custom-whoami-text-p {
     font-size: 0.9rem;
-    /*font-size: 18px;*/
     line-height: 1.4rem;
 }
 
@@ -199,11 +195,9 @@ label {
     }
 
     .custom-header {
-        /*font-size: 14px;*/
         position: fixed;
         position: -ms-device-fixed;
         top: 0;
-        /*padding-bottom: 100px;*/
 
         z-index: 100;
     }
@@ -221,11 +215,9 @@ label {
 @media(max-width: 576px) {
     .custom-subheader-name {
         font-size: 2.5rem;
-        /*font-size: 36px;*/
     }
 
     .custom-disclaimer {
-        background-color: #b1976b;
         font-size: 0.7rem;
     }
 
@@ -237,19 +229,10 @@ label {
         font-size: 1.25rem;
     }
 
-    /*.custom-subheader {*/
-    /*    padding: 62px 5px;*/
-    /*}*/
-
     .custom-padding {
         padding-left: 8px;
         padding-right: 8px;
     }
-
-    /*.custom-header {*/
-        /*padding-bottom: 50px;*/
-        /*padding-top: 62px;*/
-    /*}*/
 }
 
 

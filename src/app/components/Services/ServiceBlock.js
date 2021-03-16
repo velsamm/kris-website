@@ -12,9 +12,9 @@ const ServiceBlock = (props) => {
                 </div>
             </div>
             <div className="row py-3">
-                <label className="col text-center font-weight-bold">
+                <h6 className="col text-center font-weight-bold">
                     {textContent}
-                </label>
+                </h6>
             </div>
             <div className="row">
                 <div className="col text-center">

@@ -12,6 +12,7 @@ const YaMap = (props) => {
         <YMaps>
             <Map
                 width="100%"
+                height="100%"
                 defaultState={{
                     center: address,
                     zoom: 16,
