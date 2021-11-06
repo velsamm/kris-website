@@ -3,6 +3,7 @@ const webpack = require('webpack')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const CopyPlugin = require('copy-webpack-plugin')
+require('dotenv').config()
 
 module.exports = {
     mode: process.env.NODE_ENV === 'development' ? 'development' : 'production',
@@ -18,6 +19,11 @@ module.exports = {
         new MiniCssExtractPlugin({ filename: 'index.css' }),
         new HtmlWebpackPlugin({
             template: 'public/index.html',
+            templateParameters: {
+                FACEBOOK_PIXEL_ID: process.env.NODE_ENV === 'production'
+                    ? process.env.FACEBOOK_PIXEL_ID
+                    : ''
+            },
         }),
         new CopyPlugin({
             patterns: [
