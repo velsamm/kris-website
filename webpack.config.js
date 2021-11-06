@@ -20,7 +20,7 @@ module.exports = {
         new HtmlWebpackPlugin({
             template: 'public/index.html',
             templateParameters: {
-                FACEBOOK_PIXEL_ID: process.env.NODE_ENV === 'production'
+                FACEBOOK_PIXEL_ID: process.env.NODE_ENV !== 'development'
                     ? process.env.FACEBOOK_PIXEL_ID
                     : ''
             },
