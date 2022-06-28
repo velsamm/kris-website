@@ -1,37 +1,19 @@
-import React, { lazy, useState } from 'react'
+import React, { lazy } from 'react'
 
-import PhoneIcon from '../../icons/PhoneIcon'
 import EnvelopIcon from '../../icons/Envelope'
 import Instagram from '../../icons/Instagram'
 import LocationIcon from '../../icons/Location'
 
 import {
-    PHONE1,
-    PHONE2,
     MAIL,
     INSTAGRAM,
-    ADDRESS_KRASNODAR,
     ADDRESS_MOSCOW,
-    PHONE1_LINK,
-    PHONE2_LINK,
 } from '../../constants'
-import SearchIcon from '../../icons/SearchIcon'
 
 const YaMap = lazy(() => import('./YaMap'))
 
 const Contacts = () => {
-    const [addressState, setAddressState] = useState([55.835483, 37.633293])
-
-    const handleSwitchAddress = (city) => {
-        switch (city) {
-            case 'msk':
-                return setAddressState([55.835483, 37.633293])
-            case 'krd':
-                return setAddressState([45.040932, 38.994])
-            default: {
-            }
-        }
-    }
+    const address = [55.835483, 37.633293]
 
     return (
         <div
@@ -46,28 +28,7 @@ const Contacts = () => {
                                 <h1>КОНТАКТЫ</h1>
                             </div>
                         </div>
-                        <div className="row my-3">
-                            <div className="col custom-contacts-details font-weight-bold ">
-                                <PhoneIcon color="#ffffff" />{' '}
-                                <a
-                                    className="custom-white-text"
-                                    href={PHONE1_LINK}
-                                >
-                                    {PHONE1}
-                                </a>
-                            </div>
-                        </div>
-                        <div className="row my-3">
-                            <div className="col custom-contacts-details font-weight-bold ">
-                                <PhoneIcon color="#ffffff" />{' '}
-                                <a
-                                    className="custom-white-text"
-                                    href={PHONE2_LINK}
-                                >
-                                    {PHONE2}
-                                </a>
-                            </div>
-                        </div>
+
                         <div className="row my-3">
                             <div className="col custom-contacts-details font-weight-bold ">
                                 <EnvelopIcon color="#ffffff" /> {MAIL}
@@ -79,22 +40,9 @@ const Contacts = () => {
                                     <div className="row">
                                         <div className="col my-2">
                                             <LocationIcon />{' '}
-                                            <span
-                                                onClick={() =>
-                                                    handleSwitchAddress('msk')
-                                                }
-                                            >
+                                            <span>
                                                 {ADDRESS_MOSCOW}
                                             </span>{' '}
-                                            <button
-                                                onClick={() =>
-                                                    handleSwitchAddress('msk')
-                                                }
-                                                type="button"
-                                                className="btn btn-outline-primary"
-                                            >
-                                                <SearchIcon color="white" />
-                                            </button>
                                         </div>
                                     </div>
                                     <div className="row ml-4">
@@ -166,23 +114,6 @@ const Contacts = () => {
                         </div>
                         <div className="row my-3">
                             <div className="col custom-contacts-details font-weight-bold ">
-                                <LocationIcon />{' '}
-                                <span
-                                    onClick={() => handleSwitchAddress('krd')}
-                                >
-                                    {ADDRESS_KRASNODAR}
-                                </span>
-                                <button
-                                    onClick={() => handleSwitchAddress('krd')}
-                                    type="button"
-                                    className="btn btn-outline-primary"
-                                >
-                                    <SearchIcon color="white" />
-                                </button>
-                            </div>
-                        </div>
-                        <div className="row my-3">
-                            <div className="col custom-contacts-details font-weight-bold ">
                                 <a
                                     className="custom-white-text"
                                     type="button"
@@ -195,7 +126,7 @@ const Contacts = () => {
                     </div>
                 </div>
                 <div className="col">
-                    <YaMap address={addressState} />
+                    <YaMap address={address} />
                 </div>
             </div>
         </div>

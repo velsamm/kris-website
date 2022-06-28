@@ -1,9 +1,8 @@
 import React from 'react'
 
-import PhoneIcon from '../../icons/PhoneIcon'
 import EnvelopIcon from '../../icons/Envelope'
 import Logo from '../../icons/Logo'
-import { MAIL, PHONE1, PHONE1_LINK } from '../../constants'
+import { MAIL } from '../../constants'
 
 const Footer = () => (
     <div className="container-fluid custom-footer custom-padding custom-white-text">
@@ -20,12 +19,6 @@ const Footer = () => (
             <div className="col d-flex">
                 <div className="mr-5">
                     <EnvelopIcon /> {MAIL}
-                </div>
-                <div>
-                    <PhoneIcon />{' '}
-                    <a className="custom-white-text" href={PHONE1_LINK}>
-                        {PHONE1}
-                    </a>
                 </div>
             </div>
         </div>
