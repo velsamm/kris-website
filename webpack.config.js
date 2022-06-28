@@ -68,7 +68,7 @@ module.exports = {
         rules: [
             {
                 test: /\.(js|jsx)$/,
-                include: [path.resolve(__dirname, 'src/app')],
+                include: path.resolve(__dirname, 'src/app'),
                 loader: 'babel-loader',
             },
             {
@@ -102,7 +102,7 @@ module.exports = {
     },
 
     devServer: {
-        contentBase: path.join(__dirname, 'build/client'),
+        watchFiles: path.join(__dirname, 'build/client'),
         compress: true,
         port: 3000,
         // host: '0.0.0.0',

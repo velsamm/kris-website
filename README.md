@@ -1,7 +1,7 @@
 ## DEVELOPMENT
 
 ```
-npm start
+npm start -> localhost:3000
 ```
 
 ## PRODUCTION
