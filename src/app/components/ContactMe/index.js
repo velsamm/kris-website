@@ -7,7 +7,7 @@ const ContactMe = () => {
         const xmlHttpBuilder = new XMLHttpRequest()
         xmlHttpBuilder.open('post', '/send')
         xmlHttpBuilder.setRequestHeader('Content-Type', 'application/json')
-        const payload = JSON.stringify(message)
+        const payload = JSON.stringify({ ...message, source: 'kn-website' })
         xmlHttpBuilder.send(payload)
         xmlHttpBuilder.onload = function () {
             if (xmlHttpBuilder.status !== 200) {
